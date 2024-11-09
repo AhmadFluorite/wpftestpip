@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!-- Username Field -->
+            <StackPanel>
+                <TextBlock Text="UserName" />
+                <TextBox Name="username" AutomationProperties.AutomationId="username" />
+            </StackPanel>
+
+            <!-- Password Field -->
+            <StackPanel>
+                <TextBlock Text="Password" />
+                <TextBox Name="password" AutomationProperties.AutomationId="password" />
+            </StackPanel>
+
+            <!-- Login Button -->
+            <Button Content="Login" Click="Button_Click" 
+                    Name="LoginButton" 
+                    AutomationProperties.AutomationId="LoginButton" />
+
+            <!-- Status TextBlock -->
+            <TextBlock Name="Status" AutomationProperties.AutomationId="Status" />
+        </StackPanel>
+    </Grid>
+</Window>
